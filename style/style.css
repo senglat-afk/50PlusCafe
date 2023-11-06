@@ -1,0 +1,306 @@
+:root{
+    --main-color: #E9892D;   
+    --black-color:#1E1E1ECC; 
+    --font-color:#FFF;
+    --first-color:#7A3925;
+    --normal-color:#2F2F31;
+    --loader-color:#F9EEC9;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Cafe Francoise;   
+}
+#preloader{
+    height: 100vh;
+    width: 100%;
+    background: var(--loader-color)url(/image/Loding.gif) no-repeat center center;
+    background-size: 20%;
+    position: fixed;
+    z-index: 100;
+}
+
+section{
+    
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:1;
+}
+#home header a img{
+  margin: 20px;
+}
+#home header a i{
+    margin-right: 80px;
+}
+header ul li{
+    font-size: 18px;
+    display: inline-block;
+    margin: 50px;
+    margin-top: 65px;
+}
+#home header ul li a{
+    color: var(--font-color);
+    text-decoration: none;
+}
+#home header ul li a:hover{
+    color: var(--first-colorr);
+}
+#home{
+    background-color: var(--main-color);
+}
+#home .homepic{
+  width: 50%;
+  height: 80%;
+  border-radius: 100%;
+  position: absolute;
+  align-items: center;
+  margin-left: 48%;
+  margin-top:7%;
+  z-index:0;
+}
+#home button{
+    color: #FFF;
+    font-family: Calistoga;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    width: 200px;
+    height: 76px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #7A3925;
+    
+}
+#home a{
+    text-decoration: none;
+    color: #FFF;
+    z-index: 1;
+}
+#home h1 span{
+    color: var(--first-color);
+}
+#home h1{
+    font-weight: bold;
+    font-size: 100px;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+#home p{
+    font-size: 30px;
+    color: var(--font-color);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+#home button{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+
+#about{
+    background-color: var(--main-color);
+    
+}
+ #carouselExampleCaptions{
+    width: 1000px;
+    position: absolute;
+    margin-top:10%;
+    margin-left: 18%;
+    
+} 
+#fact{
+    position: absolute;
+    margin-top: 20%;
+} 
+
+
+#menu{
+    position: relative;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+#menubox{
+    margin-top: 5%;
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    background-color: var(--first-color);
+}
+.card{
+   margin: 50px;
+   height: 55%;
+   border-radius: 30px;
+   border: #2F2F31 10px;
+}
+.card-img-top{
+    width: 100%;
+    height: 50%;
+    border-radius: 30px;
+}
+#bottom{
+    border-radius: 20px;
+    
+}
+.card-body a{
+    border-radius: 20px;
+}
+
+#contact{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: var(--main-color);
+}
+#contact img{
+    width: 100%;
+    height: 60%;
+}
+#contact div {
+    
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+#contact div i{
+    margin: 30px;
+    position: relative;
+    margin-left: 100px;
+}
+#contact footer{
+    display: flex;
+    flex-direction: row;
+}
+#contact #list2 li{
+   color: var(--font-color);
+   text-decoration: none;
+   font-size: 20px;
+   margin: 15px;
+}
+#contact footer iframe{
+    height: 250px;
+    width: 55%;
+    border-radius:20px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* tabalate */
+@media (max-width: 768px ) {
+    body {
+      font-size: 18px;
+    }
+    #head h1{
+        font-size: 10px;
+    }
+    header ul li{
+        font-size: 18px;
+        margin: 20px; 
+    }
+    #home .homepic{
+        display: none;
+        position: absolute;
+        top: 30%;
+    }
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile  */
+@media (max-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+    section{
+        width: 100%;
+        height: 50vh;
+    }
+    header{
+        width: 100%;
+    }
+    header ul li{
+        font-size: 16px;
+        margin: 10px;  
+    }
+    #home{
+        background-image: url('../image/home9.png');
+    }
+    #home .homepic{
+        width:10%;
+        height: 20%;
+        display: none;
+    }
+    #home h1{
+        font-size:40px;
+        color: var(--first-color);
+    }
+    #home p{
+        font-size: 20px;
+        position: absolute;
+        top:30%;
+        color: var(--first-color);
+    }
+    #home button{
+        font-size: 15px;
+        width:100px;
+        height:50px;
+        position: absolute;
+        top: 40%;
+    }
+    
+  
+}
